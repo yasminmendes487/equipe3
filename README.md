@@ -10,9 +10,9 @@ identidade de grupo, organização e Git/GitHub na prática.
 
 | Nome | GitHub |
 |------|--------|
-| Isabella | — |
-| Yasmin Mendes | [@yasminmendes487](https://github.com/yasminmendes487) |
-| Yuri | — |
+|  | — |
+| 
+|  | — |
 
 
 ## ✅ Checklist Semana 1
