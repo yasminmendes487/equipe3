@@ -11,7 +11,7 @@ identidade de grupo, organização e Git/GitHub na prática.
 | Nome | GitHub |
 |------|--------|
 |  | — |
-| 
+|Yasmin Mendes | [@yasminmendes487](https://github.com/yasminmendes487) |
 |  | — |
 
 
