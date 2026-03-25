@@ -10,7 +10,7 @@ identidade de grupo, organização e Git/GitHub na prática.
 
 | Nome | GitHub |
 |------|--------|
-|  | — |
+|Isabella Andrade|[@raory1](https://github.com/raory1)|
 |Yasmin Mendes | [@yasminmendes487](https://github.com/yasminmendes487) |
 |  | — |
 
