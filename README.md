@@ -21,8 +21,8 @@ identidade de grupo, organização e Git/GitHub na prática.
 - [x] README.md com nome do time, objetivo e integrantes
 - [x] Cada integrante criou uma branch (`setup/readme-nome`)
 - [x] Cada integrante fez ao menos 1 commit com mensagem descritiva
-- [ ] Cada integrante abriu um PR para a `main`
-- [ ] Arquivo `docs/acordo-time.md` criado e versionado
+- [x] Cada integrante abriu um PR para a `main`
+- [x] Arquivo `docs/acordo-time.md` criado e versionado
 
 ## 🛠️ Como contribuir (mini-lab)
 ```bash
