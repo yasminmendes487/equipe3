@@ -12,15 +12,15 @@ identidade de grupo, organização e Git/GitHub na prática.
 |------|--------|
 |Isabella Andrade|[@raory1](https://github.com/raory1)|
 |Yasmin Mendes | [@yasminmendes487](https://github.com/yasminmendes487) |
-|  | — |
+| Yure Santana | [@SantanaYure](https://github.com/SantanaYure) |
 
 
 ## ✅ Checklist Semana 1
 
 - [x] Repositório criado no GitHub
 - [x] README.md com nome do time, objetivo e integrantes
-- [ ] Cada integrante criou uma branch (`setup/readme-nome`)
-- [ ] Cada integrante fez ao menos 1 commit com mensagem descritiva
+- [x] Cada integrante criou uma branch (`setup/readme-nome`)
+- [x] Cada integrante fez ao menos 1 commit com mensagem descritiva
 - [ ] Cada integrante abriu um PR para a `main`
 - [ ] Arquivo `docs/acordo-time.md` criado e versionado
 
