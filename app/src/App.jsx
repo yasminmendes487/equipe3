@@ -1,10 +1,27 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import Events from "./pages/Events";
+import Contact from "./pages/Contact";
+
 function App() {
   return (
-    <div className="bg-red-500 p-10">
-      <h1 className="text-white text-3xl font-bold">
-        AGORA TEM QUE FUNCIONAR
-      </h1>
-    </div>
+    <BrowserRouter>
+
+      {/* Menu fixo */}
+      <Header />
+
+      {/* Conteúdo que muda */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+    </BrowserRouter>
   );
 }
 
