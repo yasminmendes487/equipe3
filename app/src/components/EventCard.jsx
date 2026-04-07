@@ -1,7 +1,10 @@
 import { useState } from "react";
 
 export default function EventCard({ event }) {
-  const [subscribed, setSubscribed] = useState(false);
+  const [subscribed, setSubscribed] = useState(() => {
+    const saved = localStorage.getItem(`event-${event.id}`);
+    return saved === "true";
+  });
 
   return (
     <div className="border p-4 rounded-xl shadow bg-white flex flex-col justify-between h-full">
@@ -30,7 +33,11 @@ export default function EventCard({ event }) {
       {/* BOTÃO */}
       <button
         disabled={event.status === "Encerrado"}
-        onClick={() => setSubscribed(!subscribed)}
+        onClick={() => {
+          const newValue = !subscribed;
+          setSubscribed(newValue);
+          localStorage.setItem(`event-${event.id}`, newValue);
+        }}
         className={`mt-4 w-full py-3 rounded-lg text-white ${
           event.status === "Encerrado"
             ? "bg-gray-400 cursor-not-allowed"
@@ -40,8 +47,8 @@ export default function EventCard({ event }) {
         {event.status === "Encerrado"
           ? "Encerrado ❌"
           : subscribed
-            ? "Inscrito ✅"
-            : "Inscrever-se"}
+          ? "Inscrito ✅"
+          : "Inscrever-se"}
       </button>
     </div>
   );
