@@ -79,13 +79,7 @@ export default function EventCard({ event }) {
             : "Inscrever-se"}
         </button>
 
-        {/* DETALHES */}
-        <Link
-          to={`/events/${event.id}`}
-          className="block text-center w-full py-2 rounded-lg text-sm text-gray-600 hover:text-black hover:underline"
-        >
-          Ver detalhes
-        </Link>
+        
 
       </div>
 
