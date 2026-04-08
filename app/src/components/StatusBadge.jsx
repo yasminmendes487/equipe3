@@ -3,10 +3,14 @@ function StatusBadge({ status }) {
 
   const styles = {
     aprovado: "bg-green-100 text-green-700",
+    confirmado: "bg-green-100 text-green-700",
     pendente: "bg-yellow-100 text-yellow-700",
+    "pendente de pagamento": "bg-yellow-100 text-yellow-700",
     recusado: "bg-red-100 text-red-700",
+    cancelado: "bg-red-100 text-red-600",
     aberto: "bg-blue-100 text-blue-700",
     encerrado: "bg-gray-100 text-gray-500",
+    rascunho: "bg-slate-100 text-slate-500",
   };
 
   return (
