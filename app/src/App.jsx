@@ -1,28 +1,30 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Index from "./pages/Index.jsx";
+import Login from "./pages/Login.jsx";
+import Cadastro from "./pages/cadastro.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import Eventos from "./pages/Eventos.jsx";
+import Inscricoes from "./pages/Inscricoes.jsx";
+import CheckInPage from "./pages/CheckIn.jsx";
+import Certificados from "./pages/Certificados.jsx";
+import Relatorios from "./pages/Relatorios.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import Dashboard from "./pages/Dashboard";
-import Events from "./pages/Events";
-import Contact from "./pages/Contact";
-
-function App() {
-  return (
-    <BrowserRouter>
-
-      {/* Menu fixo */}
-      <Header />
-
-      {/* Conteúdo que muda */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-
-    </BrowserRouter>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/cadastro" element={<Cadastro />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/eventos" element={<Eventos />} />
+      <Route path="/inscricoes" element={<Inscricoes />} />
+      <Route path="/checkin" element={<CheckInPage />} />
+      <Route path="/certificados" element={<Certificados />} />
+      <Route path="/relatorios" element={<Relatorios />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;

@@ -1,23 +1,21 @@
-function StatusBadge({ status }) {
-  const normalized = status.toLowerCase();
+import { cn } from '@/lib/utils.js';
 
-  const styles = {
-    aprovado: "bg-green-100 text-green-700",
-    pendente: "bg-yellow-100 text-yellow-700",
-    recusado: "bg-red-100 text-red-700",
-    aberto: "bg-blue-100 text-blue-700",
-    encerrado: "bg-gray-100 text-gray-500",
-  };
+const statusConfig = {
+  aberto: { label: 'Aberto', classes: 'bg-accent/10 text-accent border-accent/20' },
+  encerrado: { label: 'Encerrado', classes: 'bg-muted text-muted-foreground border-border' },
+  em_andamento: { label: 'Em andamento', classes: 'bg-primary/10 text-primary border-primary/20' },
+  pendente: { label: 'Pendente', classes: 'bg-yellow-500/10 text-yellow-600 border-yellow-500/20' },
+  aprovado: { label: 'Aprovado', classes: 'bg-accent/10 text-accent border-accent/20' },
+  recusado: { label: 'Recusado', classes: 'bg-destructive/10 text-destructive border-destructive/20' },
+};
 
+const StatusBadge = ({ status, className }) => {
+  const config = statusConfig[status] || { label: status, classes: 'bg-muted text-muted-foreground border-border' };
   return (
-    <span
-      className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
-        styles[normalized] || "bg-gray-100 text-gray-500"
-      }`}
-    >
-      {status}
+    <span className={cn('inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border', config.classes, className)}>
+      {config.label}
     </span>
   );
-}
+};
 
 export default StatusBadge;
