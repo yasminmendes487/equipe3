@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import { PieChart, TrendingUp, Download } from 'lucide-react';
 import AppLayout from '@/components/AppLayout.jsx';
-import { mockEvents, mockEnrollments } from '@/data/mockData.js';
+import { useAppContext } from '@/App.jsx';
 
 const Relatorios = () => {
+  const { events: mockEvents, enrollments: mockEnrollments } = useAppContext();
   const totalRevenue = mockEvents.reduce((sum, e) => sum + (e.price * e.enrolled), 0);
   const approvedCount = mockEnrollments.filter(e => e.status === 'aprovado').length;
   const pendingCount = mockEnrollments.filter(e => e.status === 'pendente').length;
