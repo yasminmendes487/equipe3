@@ -7,7 +7,6 @@
 
 O **EventNow** é uma plataforma web para gerenciamento de eventos acadêmicos e corporativos. Permite que administradores criem eventos, gerenciem inscrições, realizem check-in de participantes e emitam certificados — tudo em um único lugar, com um fluxo conectado de ponta a ponta.
 
-
 ## ✨ Funcionalidades
 
 | Módulo | Descrição |
@@ -20,8 +19,6 @@ O **EventNow** é uma plataforma web para gerenciamento de eventos acadêmicos e
 | 👑 **Administradores** | Gerenciamento de usuários admin: adicionar, remover, ativar/desativar e alterar cargo |
 
 ### 🔗 Fluxo conectado
-
-```
 Inscrição pendente
        ↓
   Admin aprova
@@ -100,8 +97,3 @@ O estado da aplicação é centralizado em um **Context React** definido no `App
 | Yasmin Mendes | [@yasminmendes487](https://github.com/yasminmendes487) |
 | Yuré Santana | [@SantanaYure](https://github.com/SantanaYure) |
 
----
-
-<p align="center">
-  Feito com pela equipe 3· Labs Talents 2026
-</p>
